@@ -1,11 +1,11 @@
-package com.example.id.controller;
+package org.example.id.controller;
 
-import com.example.id.dto.AuthRequestDTO;
-import com.example.id.dto.AuthResponseDTO;
-import com.example.id.dto.VerificationRequestDTO;
-import com.example.id.dto.VerificationResponseDTO;
-import com.example.id.manager.AuthManager;
-import com.example.id.security.Authentication;
+import org.example.id.dto.AuthRequestDTO;
+import org.example.id.dto.AuthResponseDTO;
+import org.example.id.dto.VerificationRequestDTO;
+import org.example.id.dto.VerificationResponseDTO;
+import org.example.id.manager.AuthManager;
+import org.example.id.security.Authentication;
 import lombok.RequiredArgsConstructor;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
