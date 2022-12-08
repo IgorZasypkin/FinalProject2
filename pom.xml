@@ -5,55 +5,23 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>java-template</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <artifactId>FinalProject2</artifactId>
+    <version>1.0.1-01a</version>
     <packaging>pom</packaging>
-    <modules>
-        <module>id</module>
-    </modules>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
-        <lombok.version>1.18.24</lombok.version>
-        <maven-assembly-plugin.version>3.3.0</maven-assembly-plugin.version>
     </properties>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>${lombok.version}</version>
-            <scope>provided</scope>
-        </dependency>
-    </dependencies>
-
-    <build>
-        <finalName>app</finalName>
-        <plugins>
-            <plugin>
-                <artifactId>maven-assembly-plugin</artifactId>
-                <version>${maven-assembly-plugin.version}</version>
-                <configuration>
-                    <archive>
-                        <manifest>
-                            <mainClass>org.example.Main</mainClass>
-                        </manifest>
-                    </archive>
-                    <descriptorRefs>
-                        <descriptorRef>jar-with-dependencies</descriptorRef>
-                    </descriptorRefs>
-                </configuration>
-                <executions>
-                    <execution>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>single</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-    </build>
+    <modules>
+        <module>id</module>
+        <module>catalog</module>
+        <module>planner</module>
+        <module>orders</module>
+        <module>message</module>
+        <module>bonus</module>
+        <module>test</module>
+    </modules>
 
 </project>
